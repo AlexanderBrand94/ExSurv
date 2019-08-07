@@ -16,11 +16,15 @@
 facet_survival_comp <- function(fit, data, facet_vector, ncol = 2, title = NULL){
 library(survminer)
 ggsurvplot_facet(fit, data = data, facet.by = facet_vector)+
-    theme_minimal()+ scale_colour_grey()+ facet_wrap(~strata, ncol = ncol)+
-  geom_smooth(method = "loess", color = "darkred", se = F)+
-  geom_smooth(method = "lm", color = "red", se = F)+
-  labs(title = title, caption = "darkred = fit with loess, red = fit with lm")
+    theme_minimal()+ scale_colour_viridis_d()+ facet_wrap(~strata, ncol = ncol)+
+  geom_smooth(method = "loess", color = "blue", se = F, alpha = 0.4)+
+  geom_smooth(method = "lm", color = "lightgreen", se = F, alpha = 0.4)+
+  labs(title = title, caption = "darkred = fit with loess, red = fit with lm")+
+  geom_hline(yintercept = 0.5, linetype ="dashed")
 }
+
+
+facet_survival_comp(km_trt_fit, dat, "beep", ncol = 3)
 
 
 
