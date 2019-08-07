@@ -24,7 +24,6 @@ ggsurvplot_facet(fit, data = data, facet.by = facet_vector)+
 }
 
 
-facet_survival_comp(km_trt_fit, dat, "beep", ncol = 3)
 
 
 
