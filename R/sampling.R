@@ -11,7 +11,7 @@
 
 
 sample_ex_data <- function(n_participants = 100, n_days = 7, art_breaks = 0.20){
-  sample_plan <- emaph::sample_plan(n_participants, n_days)
+  sample_plan <- sample_plan(n_participants, n_days)
   dat <- mm_par_a <- list(
     fixed  = c(intercept = 0,
                time      = 0),
