@@ -19,7 +19,7 @@ ggsurvplot_facet(fit, data = data, facet.by = facet_vector)+
     theme_minimal()+ scale_colour_viridis_d()+ facet_wrap(~strata, ncol = ncol)+
   geom_smooth(method = "loess", color = "blue", se = F, alpha = 0.4)+
   geom_smooth(method = "lm", color = "lightgreen", se = F, alpha = 0.4)+
-  labs(title = title, caption = "darkred = fit with loess, red = fit with lm")+
+  labs(title = title, caption = "blue = fit with loess, green = fit with lm")+
   geom_hline(yintercept = 0.5, linetype ="dashed")
 }
 
