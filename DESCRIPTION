@@ -1,8 +1,8 @@
 Package: ExSurv
 Title: Analysis of Prevalence in EX (Experience Sampling) Data
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: person("Alexander", "Brand", email = "Alexander.Brand@uni-bamberg.de", role = c("aut", "cre"))
+Description: Survival Analysis for Experience Sampling Data.
 Depends: R (>= 3.5.2)
 License: What license is it under?
 Encoding: UTF-8
@@ -16,4 +16,5 @@ Imports:
     survminer,
     survival,
     emaph,
-    survHE
+    survHE,
+    tibble

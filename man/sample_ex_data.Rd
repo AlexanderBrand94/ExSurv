@@ -4,12 +4,14 @@
 \alias{sample_ex_data}
 \title{A generell sample function for the creation of Experience Sampling Data}
 \usage{
-sample_ex_data(n_participants = 100, n_days = 7)
+sample_ex_data(n_participants = 100, n_days = 7, art_breaks = 0.2)
 }
 \arguments{
 \item{n_participants}{Number of Participants. Default = 100}
 
 \item{n_days}{Number of Days. Default = 7}
+
+\item{art_breaks}{Specification at which value and event occurs. Between 0 ans 1. Default = 0.20}
 }
 \description{
 This function allows you to test sample experience data.
