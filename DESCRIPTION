@@ -8,3 +8,12 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1.9000
+Imports: 
+    ggplot2,
+    ggthemes,
+    sjPlot,
+    dplyr,
+    survminer,
+    survival,
+    emaph,
+    survHE
