@@ -17,4 +17,5 @@ Imports:
     survival,
     emaph,
     survHE,
-    tibble
+    tibble,
+    zoo

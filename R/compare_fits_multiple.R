@@ -21,7 +21,7 @@ compare_fits_multiple <- function(formula_in, data = dat){
   ggplot2::ggplot(list_model, aes(time, est, color = as.factor(model))) +
     geom_ribbon(size = 1, aes(ymin = lcl, ymax = ucl,
                               color = NA, fill = as.factor(model)), alpha = 0.3)+ geom_line() +
-    labs(color = "Model", x = "time", y = "survival", fill = "Model")+ theme_minimal() +
+    labs(color = "Model", x = "Time", y = "Survival", fill = "Model")+ theme_minimal() +
     scale_colour_viridis_d()+ scale_fill_viridis_d()+ geom_hline(yintercept = 0.5, linetype ="dashed")
   }
 
